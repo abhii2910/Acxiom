@@ -1,10 +1,11 @@
 <?php
 
 // Database connection parameters
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "event_management";
+$servername = "sql6.freemysqlhosting.net";
+$username = "sql6681587";
+$password = "GpgjNmMucd";
+$dbname = "sql6681587";
+
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);

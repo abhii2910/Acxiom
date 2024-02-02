@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .signup-section {
+            text-align: left;
+        }
+
+        #signupForm {
+            max-width: 300px;
+            margin: 0 auto;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<section class="signup-section">
+    <h2>Signup</h2>
+    <form action="signup.php" method="post" id="signupForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="username">Create Username:</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="password">Create Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <label for="role">Select Role:</label>
+        <select id="role" name="role" required>
+            <option value="vendor">Vendor</option>
+            <option value="admin">Admin</option>
+            <option value="user">User</option>
+        </select>
+
+        <button type="submit">Signup</button>
+    </form>
+</section>
+
+</body>
+</html>

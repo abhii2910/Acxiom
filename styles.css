@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+}
+
+.login-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.login-button a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 1px solid #fff;
+    border-radius: 4px;
+}
+
+.login-button a:hover {
+    background-color: #fff;
+    color: #333;
+}
+
+section {
+    max-width: 80px;
+    margin: 20px auto;
+    background-color: #fff;
+    background-size: 80px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

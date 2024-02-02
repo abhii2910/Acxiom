@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login-styles.css">
+    <title>Login</title>
+    <style>
+        /* Add a style block or include in your external CSS file */
+        #user-type {
+            width: 80%; /* Adjust the width as needed */
+        }
+    </style>
+</head>
+<body>
+
+<section class="login-section">
+    <h2>Login</h2>
+   
+    <form action="login.php" method="post">
+        <div class="login-options">
+            <label for="user-type">Select User Type:</label>
+            <select id="user-type" name="user-type" style="width: 100%;" size="1">
+                <option value="vendor">Vendor</option>
+                <option value="admin">Admin</option>
+                <option value="user">User</option>
+            </select>
+        </div>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <button type="submit">Login</button>
+    </form>
+</section>
+
+</body>
+</html>

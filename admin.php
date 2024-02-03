@@ -31,17 +31,18 @@ if (!isset($_SESSION['authenticated']) || !$_SESSION['authenticated']) {
 </header>
 
 <section class="main-section">
-    <h2>Welcome, Admin!</h2>
+   <table> <h2>Welcome, Admin!</h2>
     <div class="admin-options">
         <p>Maintain Users</p>
       
         <p>Maintain Vendors</p>
    
     </div>
+</table>
 </section>
 
 <footer>
-    <p>&copy; 2024 Event Management Website. All rights reserved.</p>
+    <p>&copy; 2024 Event Management Website</p>
 </footer>
 
 </body>

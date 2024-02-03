@@ -1,6 +1,6 @@
 <?php
 
-// Database connection 
+
 $servername = "sql6.freemysqlhosting.net";
 $username = "sql6681587";
 $password = "GpgjNmMucd";
@@ -31,10 +31,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $password = sanitizeInput($_POST["password"]);
     $role = sanitizeInput($_POST["role"]);
 
-    // Hash the password for security
+    
     $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
 
-    // Insert user data into the database
+  
     $sql = "INSERT INTO users (name, email, username, password, role) VALUES ('$name', '$email', '$username', '$hashedPassword', '$role')";
 
     if ($conn->query($sql) === TRUE) {

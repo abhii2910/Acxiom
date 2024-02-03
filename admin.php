@@ -34,9 +34,9 @@ if (!isset($_SESSION['authenticated']) || !$_SESSION['authenticated']) {
     <h2>Welcome, Admin!</h2>
     <div class="admin-options">
         <p>Maintain Users</p>
-        <!-- Add functionality and links for maintaining users -->
+      
         <p>Maintain Vendors</p>
-        <!-- Add functionality and links for maintaining vendors -->
+   
     </div>
 </section>
 

@@ -1,21 +1,21 @@
 <?php
 
-// Database connection parameters
+// Database connection 
 $servername = "sql6.freemysqlhosting.net";
 $username = "sql6681587";
 $password = "GpgjNmMucd";
 $dbname = "sql6681587";
 
 
-// Create connection
+
 $conn = new mysqli($servername, $username, $password, $dbname);
 
-// Check connection
+
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-// Function to sanitize input data
+
 function sanitizeInput($input) {
     $input = trim($input);
     $input = stripslashes($input);
@@ -24,7 +24,7 @@ function sanitizeInput($input) {
 }
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Sanitize and validate input data
+   
     $name = sanitizeInput($_POST["name"]);
     $email = sanitizeInput($_POST["email"]);
     $username = sanitizeInput($_POST["username"]);
@@ -44,7 +44,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 }
 
-// Close the database connection
+
 $conn->close();
 
 ?>

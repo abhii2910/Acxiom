@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-// Check if the user is authenticated, if not, redirect to login.php
+// Check if the user is authenticated if not redirect to login
 if (!isset($_SESSION['authenticated']) || !$_SESSION['authenticated']) {
     header("Location: login.html");
     exit();
@@ -32,17 +32,17 @@ if (!isset($_SESSION['authenticated']) || !$_SESSION['authenticated']) {
 
     <script>
         function viewItems() {
-            // Add logic for viewing items
+            
             alert('View Your Items');
         }
 
         function addNewItem() {
-            // Add logic for adding a new item
+        
             alert('Add New Item');
         }
 
         function viewTransactions() {
-            // Add logic for viewing transactions
+          
             alert('View Transactions');
         }
     </script>

@@ -48,8 +48,6 @@ if (!isset($_SESSION['authenticated']) || !$_SESSION['authenticated']) {
     </script>
 </body>
 
-
-
-
 </body>
+
 </html>
